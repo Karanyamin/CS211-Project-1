@@ -18,7 +18,7 @@ int main(int argc, char* argv[]){
     for (i = 0; i < numberOfElements; i++){
         int value;
         fscanf(pointer, "%d\n", &value);
-        if (value == 1 || value == 0){
+        if (value <= 1){
             printf("no\n");
         } else {
             if(isRightPrime(value) == 1){
